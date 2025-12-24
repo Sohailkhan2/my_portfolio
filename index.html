@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/4eb2218fad.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo" data-aos="fade-right">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text"><a href="#header">SK</a></span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fac fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fac fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+
+                <h1>Hi, I'm <span>S</span>ohail <span>K</span>han<br></h1>
+                <p>
+                    And I'm a <span id="typing-text"></span>
+                </p>
+            </div>
+            
+
+        </div>
+        
+    </div>
+    <!-- about -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="./resources/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am Sohail Khan, a passionate and dedicated MCA graduate specialized in full-stack web
+                        development.
+                        I possess a strong foundation in Python, Django, and the modern web stack (HTML, CSS,
+                        JavaScript).
+                        My focus is on creating dynamic, user-friendly, and scalable applications, with hands-on
+                        experience in
+                        machine learning-based systems (like my Recommendation Engine) and real-time API integrations.
+                        I am actively seeking an internship or entry-level opportunity to contribute to innovative
+                        projects
+                        and grow as a skilled Full Stack Developer.
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span>Frontend Developer</span><br>
+                                Build responsive and user-friendly web interfaces using
+                                HTML5, CSS3, JavaScript, Bootstrap, and modern layout techniques
+                                like Flexbox and Grid.
+                            </li>
+                            <li>
+                                <span>Backend Developer</span><br>
+                                Develop secure and scalable backend systems using
+                                Python and Django, handling authentication, database operations,
+                                APIs, and server-side logic.
+                            </li>
+                            <li>
+                                <span>Full Stack Developer</span><br>
+                                Create complete web applications by integrating frontend and backend,
+                                managing databases with SQL (Oracle 11g), deploying projects,
+                                and ensuring smooth end-to-end functionality.
+                            </li>
+                            <li>
+                                <span>SQL Developer</span><br>
+                                Design, write, and optimize SQL queries using Oracle 11g.
+                                Experienced in DDL, DML, DQL, TCL, and DCL commands,
+                                complex joins, subqueries, grouping, and performance-focused query execution.
+                            </li>
+                            <li>
+                                <span>Python Developer</span><br>
+                                Strong foundation in Python programming with hands-on experience in OOP concepts, file
+                                handling, exception handling, and building real-world projects including data processing
+                                and machine learning applications.
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Web Developer Intern</span><br>CipherByte Technologies</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2024 - 2026</span><br>Master of Computer Application (MCA) <br> <b>Stream:
+                                </b>Computer Science</li>
+                            <li><span>2021 - 2024</span><br>Bachlore of Science (Bsc) <br> <b>Stream:</b> Data Science
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="./resources/sohail_khan_resume.pdf" download class="btn btn2">Download CV</a>
+
+    </div>
+
+    <!-- -------------------- Services ------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Full Stack Development</h2>
+                    <p>
+                        End-to-end web application development using HTML, CSS, JavaScript,
+                        Bootstrap, Python, and Django. From responsive UI design to backend logic
+                        and database integration.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Python Development</h2>
+                    <p>
+                        Development of efficient Python applications using OOP principles,
+                        file handling, exception handling, and Django for dynamic and scalable web solutions.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>SQL & Database Management</h2>
+                    <p>
+                        Design and management of databases using Oracle SQL.
+                        Expertise in writing complex queries, joins, subqueries,
+                        and optimizing data retrieval.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -----------------portfolio ---------------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="./resources/wrk1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Medical Prescription Analyzer</h3>
+                        <p>
+                            AI-based web application that analyzes medical prescriptions.
+                            Built using HTML, CSS, JavaScript, and deployed on Netlify.
+                        </p>
+                        <a href="https://medical-prescription-analyzer.netlify.app/">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./resources/wrk2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Weather App</h3>
+                        <p>
+                            Real-time weather application using public API.
+                            Displays live weather data with a clean and responsive UI.
+                        </p>
+                        <a href="https://weather-app-project-sk.netlify.app/">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="./resources/wrk3.0.jpg" alt="">
+                    <div class="layer">
+                        <h3>Book Recommendation System</h3>
+                        <p>
+                            Machine learning-based system using collaborative and content-based filtering
+                            to recommend books with improved accuracy.
+                        </p>
+                        <a href="#">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ---------------contact -------------- -->
+    <div id="contact">
+        <div class="conatiner">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fa-solid fa-paper-plane"></i> mr.sohailkhan.27@gmail.com</p>
+                    <p> <i class="fa-solid fa-phone"></i> +91 9100381051</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1FzwRwNVhP/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/SohailKhan45626"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/code_with_sohail?igsh=MXExMjBucHVtYW9kMg=="><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/sohail-khan-sk-/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ Sohail. Made With <i class="fa-solid fa-heart"></i> by Code_with_Sohail.</p>
+        </div>
+    </div>
+</body>
+
+<script src="./script.js"></script>
+
+</html>
