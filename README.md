@@ -21,6 +21,7 @@ https://sohail-khan-portfolio.netlify.app/
 
 ## 📁 Project Structure
 
+```text
 my_portfolio/
 ├── index.html
 ├── css/
@@ -30,6 +31,8 @@ my_portfolio/
 ├── assets/
 │   └── images/
 └── README.md
+
+
 
 ## 📌 Learning Outcomes
 - Improved understanding of frontend development
